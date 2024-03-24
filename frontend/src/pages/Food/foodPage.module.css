@@ -1,0 +1,119 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 3rem;
+}
+
+.container > * {
+  min-width: 25rem;
+  max-width: 40rem;
+}
+
+.image {
+  border-radius: 2rem;
+  flex: 1 1 35rem;
+  object-fit: cover;
+  height: 30rem;
+  margin: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+
+
+.details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 35rem;
+  border-radius: 2rem;
+  padding: 2rem;
+  color: black;
+  margin-left: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.favorite {
+  color: #e72929;
+  font-size: 3rem;
+  transition: color 0.3s ease;
+}
+
+.favorite.not {
+  color: grey;
+}
+
+.favorite:hover {
+  color: #ff5252;
+}
+
+.origins {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.7rem 0;
+}
+
+.origins > span {
+  padding: 0.5rem 1rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin: 0.5rem 0.5rem 0 0;
+  border-radius: 2rem;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.cook_time {
+  margin-top: 1rem;
+}
+
+.cook_time span {
+  padding: 0.5rem 1.5rem;
+  border-radius: 10rem;
+  font-size: 1.5rem;
+  background-color: #ffcc80;
+  font-weight: 200;
+  color: #333;
+}
+
+.price {
+  font-size: 2rem;
+  margin: 2rem 2rem 2rem 0;
+  color: green;
+  font-weight: 300;
+}
+
+.price::before {
+  content: 'Price: ';
+  color: #888;
+}
+
+.container button {
+  color: white;
+  background-color: #e72929;
+  border: none;
+  font-size: 1.5rem;
+  padding: 1.2rem 2rem;
+  border-radius: 10rem;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+  background-color: #ff5252;
+  transform: scale(1.05);
+  transition: 1s;
+}

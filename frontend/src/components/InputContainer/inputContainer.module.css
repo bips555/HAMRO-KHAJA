@@ -1,0 +1,22 @@
+.container {
+  position: relative;
+  margin-bottom: 0.5rem;
+  border-radius: 0.7rem;
+  padding-top: 0.3rem;
+  border: 3px solid #d3a0a0;
+}
+
+.label {
+  display: inline-block;
+  margin-left: 0.5rem;
+  color: #111010;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.content {
+  padding: 0.5rem 0.5rem;
+  height: 2.7rem;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,45 @@
+.container {
+  position: relative;
+  width: 35rem;
+  height: 22rem;
+  text-align: center;
+  overflow: hidden;
+ 
+}
+
+.map {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+  
+ 
+}
+
+.map:hover {
+  transform: scale(1.05);
+}
+
+.find_location {
+  position: absolute;
+  margin: auto;
+  width: 12rem;
+  min-height: 2.5rem;
+  font-size: 1rem;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background-color: #ff7f50;
+  color: white;
+  cursor: pointer;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.find_location:hover {
+  background-color: #ff6347;
+}

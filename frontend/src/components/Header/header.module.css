@@ -1,0 +1,105 @@
+.header {
+  background:white;
+  padding:  1rem;
+  border-bottom: 2px solid #e72929;
+  transition: border-color 0.3s ease;
+}
+
+.header a {
+  color: #f01717;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+
+
+.container {
+ 
+  margin: 0 ;
+
+  display: flex;
+  justify-content:space-between;
+  
+}
+
+.logo {
+  font-weight: bold;
+  
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.header ul {
+  display: flex;
+  list-style-type: none;
+  margin: 20px 0px;
+}
+
+.header ul a {
+ margin-right: 10px;
+  position: relative;
+
+
+  transition: transform 0.3s ease;
+}
+
+.header ul a:hover {
+  transform: translateY(-3px);
+}
+
+.menu_container {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  z-index: 1001;
+  background-color: whitesmoke;
+
+  display: none;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu_container:hover .menu {
+  display: block;
+  opacity: 1;
+ 
+
+}
+
+.menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #221f1f;
+}
+
+.cart_count {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.cart_count:hover {
+  transform: scale(1.2);
+}

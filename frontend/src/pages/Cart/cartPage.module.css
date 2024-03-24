@@ -1,0 +1,167 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  margin: 1.5rem;
+  margin-top: 0.5rem;
+  text-align: center; 
+  font-size: 30px;
+  color: #e72929 !important;
+  font-weight: 300;
+  
+}
+.container a{
+  color: red;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  flex: 3 0;
+  justify-content: space-evenly;
+  border: 2px solid red;
+  border-radius: 1rem;
+  list-style-type: none;
+  margin: 0.5rem;
+  padding: 0;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  flex-wrap: wrap;
+  border-bottom: 2px solid red;
+}
+
+.list li:last-child {
+  border: none;
+
+}
+
+.list li img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100rem;
+  object-fit: cover;
+}
+
+.list li div {
+  padding: 1rem;
+}
+
+.list li div:not(:first-child) {
+  flex-basis: 18%;
+}
+
+.list li select {
+  appearance: none;
+  width: 100px;
+  padding: 0.5rem;
+ 
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  outline: none;
+  background-color: white;
+  background-image: linear-gradient(45deg, transparent 50%, #ccc 50%);
+  background-position: calc(100% - 20px) calc(0.5em + 2px);
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.list li select:hover {
+  border-color: #999;
+}
+
+.list li select:focus {
+  border-color: #555;
+}
+
+.list li select option {
+  background-color: white;
+  color: #333;
+}
+
+.list li select option:hover {
+  background-color: #f0f0f0;
+}
+
+
+.list .remove_button {
+  border-radius: 1rem;
+  border: none;
+  padding: 0.9rem;
+  color: white;
+  background-color: red;
+  opacity: 1;
+  outline:#e72929;
+}
+
+.list .remove_button:hover {
+ 
+  cursor: pointer;
+ 
+  transition: 1.2s;
+  scale: 1.4;
+
+}
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 3;
+  height: 20rem;
+  border: 2px solid red;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.checkout > div {
+
+  margin: 1rem;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.checkout .foods_count {
+  margin-bottom: 1.5rem;
+}
+
+.checkout .foods_count::before {
+  content: 'Count: ';
+  color: grey;
+}
+
+.checkout .total_price::before {
+  content: 'Price: ';
+  color: grey;
+}
+
+.checkout a {
+  padding: 1rem;
+  color: white;
+  background: #e72929;
+  display: block;
+  /* width: 99%; */
+  border-radius: 1rem;
+  text-align: center;
+  justify-self: center;
+}
+
+.checkout a:hover {
+  
+  background-color: #e72929;
+  cursor: pointer;
+  scale: 1.01;
+ 
+  transition: 1.2s;
+}

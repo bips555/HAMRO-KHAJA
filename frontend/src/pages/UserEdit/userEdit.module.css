@@ -1,0 +1,32 @@
+.container {
+  margin-top: 1rem;
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  margin: 1rem;
+  max-width: 25rem;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+form > * {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 1rem;
+  }
+}

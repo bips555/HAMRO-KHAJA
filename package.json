@@ -1,0 +1,21 @@
+{
+  "name": "HAMRO KHAJA",
+  "version": "1.0.0",
+  "description": "## 1. Demo And Installation",
+  "main": "index.js",
+  "scripts": {
+  "start":"cd backend && npm start",
+    "build": "cd frontend && npm run build",
+    "postbuild":"move /Y frontend\\build backend\\src\\public"
+  
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18 <19"
+  },
+  "dependencies": {
+    "kill-port": "^2.0.1"
+  }
+}
