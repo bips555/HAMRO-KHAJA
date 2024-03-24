@@ -79,21 +79,4 @@ export const sample_tags = [
   { name: "momo", count: 1 },
 ];
 
-export const sample_users = [
-  {
-    id: 1,
-    name: "Madhav Dhakal",
-    email: "dhakal.madhav@gmail.com",
-    password: "12345",
-    address: "Toronto On",
-    isAdmin: true,
-  },
-  {
-    id: 2,
-    name: "Bishal bhatta",
-    email: "bishal@gmail.com",
-    password: "12345",
-    address: "charikot",
-    isAdmin: true,
-  },
-];
+
