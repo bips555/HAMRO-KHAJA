@@ -80,3 +80,21 @@ export const sample_tags = [
 ];
 
 
+export const sample_users = [
+  {
+    id: 1,
+    name: 'Biplov Subedi',
+    email: 'subedi@gmail.com',
+    password: '12345',
+    address: 'ktm',
+    isAdmin: false,
+  },
+  {
+    id: 2,
+    name: 'madhav DHakal',
+    email: 'dhakal@gmail.com',
+    password: '12345',
+    address: 'butwal',
+    isAdmin: true,
+  },
+];
